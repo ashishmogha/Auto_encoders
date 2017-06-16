@@ -27,12 +27,11 @@
 
 # Results 
 
-![screenshot capture - 2017-06-17 - 03-48-11](https://user-images.githubusercontent.com/17912055/27246523-d34d4b2a-530f-11e7-91e0-786a32e2866c.png)
+![mnist_examples](https://user-images.githubusercontent.com/17912055/27246025-814e225c-530c-11e7-8604-f9b0864f1baa.png)
 
  * `Top row    -   Original Images`
  * `Bottom row -   Reconstruted Images by **simple auto_encoders**`
 
- 
  
  
  
@@ -61,12 +60,18 @@
 
 ##### Do checkout [Distill article](http://distill.pub/2016/deconv-checkerboard/) from Augustus Odena, et al, the authors show that these checkerboard artifacts can be avoided by resizing the layers using nearest neighbor(**upsampling**) followed by a **convolutional** layer.
 
+
+
 # Results 
 
-![mnist_examples](https://user-images.githubusercontent.com/17912055/27246025-814e225c-530c-11e7-8604-f9b0864f1baa.png)
+![screenshot capture - 2017-06-17 - 03-48-11](https://user-images.githubusercontent.com/17912055/27246523-d34d4b2a-530f-11e7-91e0-786a32e2866c.png)
 
  * `Top row    -   Original Images`
  * `Bottom row -   Reconstruted Images by **simple auto_encoders**`
+
+ 
+
+
  
  
  ##### In practice, **autoencoders** aren't actually better at `compression` compared to typical methods like `JPEGs and MP3s`.But, they are being used for `noise reduction`.
@@ -79,7 +84,11 @@
  *  Create the **noisy** images ourselves by adding **Gaussian noise** to the training images, then clipping the values to be between 0 and 1. 
  * Use the **noisy** images as input and the original, **clean** images as targets. 
  
- ############# Here's an example of the noisy images I generated and the denoised images.
+ ###### Here's an example of the noisy images I generated and the denoised images.
+ 
+ ![denoising](https://user-images.githubusercontent.com/17912055/27247144-da97cd52-5313-11e7-9a31-629dfe2546cb.png)
+
+
 
  
 `
