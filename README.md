@@ -8,7 +8,9 @@
 
 # Simple auto_encoders
 
-* Start off by building a simple **autoencoder** to compress the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset. With **autoencoders**.
+* Start off by building a **simple autoencoder** to compress the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset. 
+
+### Architecture
 
 * Pass input data through an **encoder** that makes a compressed representation of the input .
 * Then, this representation is passed through a **decoder** to reconstruct the input data.
@@ -39,6 +41,29 @@
  # Convolutional Autoencoder
  
  * Let's improve the  **autoencoder's** performance using **convolutional** layers.
+ * Start off by building a **Convolutional autoencoder** to compress the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset.
+ 
+ ### Architecture
+ 
+ * The **encoder** part of the network will be a typical **convolutional pyramid**. 
+ * Each **convolutional** layer will be followed by a **max-pooling** layer to reduce the dimensions of the layers. 
+ * The **decoder** needs to convert from a narrow representation to a wide reconstructed image. 
+ 
+ ![screenshot capture - 2017-06-17 - 03-02-52](https://user-images.githubusercontent.com/17912055/27246323-7a374db6-530e-11e7-93d5-c6b69582531d.png)
+
+* So the decoder has these **Upsample** layers.
+* Usually, we see **deconvolutional** layers used to increase the width and height of the layers. They work almost exactly the same as **convolutional layers** but in reverse.
+* **Deconvolution** is often called **transpose convolution**.
+* **Deconvolutional** layers can lead to artifacts in the final images, such as checkerboard patterns. This is due to overlap in the kernels which can be avoided by setting the stride and kernel size equal.
+
+
+
+###### Do checkout [Distill article](http://distill.pub/2016/deconv-checkerboard/) from Augustus Odena, et al, the authors show that these checkerboard artifacts can be avoided by resizing the layers using nearest neighbor(**upsampling**) followed by a **convolutional** layer.
+
+
+ 
+
+ 
  
  
 
