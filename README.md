@@ -69,8 +69,17 @@
  * `Bottom row -   Reconstruted Images by **simple auto_encoders**`
  
  
- In practice, **autoencoders** aren't actually better at `compression` compared to typical methods like `JPEGs and MP3s`.
- But, they are being used for `noise reduction`.
+ ##### In practice, **autoencoders** aren't actually better at `compression` compared to typical methods like `JPEGs and MP3s`.But, they are being used for `noise reduction`.
+ 
+ 
+ 
+ # Denoising
+ 
+ * "autoencoders" can be used to **denoise** images quite successfully just by training the network on **noisy** images.
+ *  Create the **noisy** images ourselves by adding **Gaussian noise** to the training images, then clipping the values to be between 0 and 1. 
+ * Use the **noisy** images as input and the original, **clean** images as targets. 
+ 
+ ############# Here's an example of the noisy images I generated and the denoised images.
 
  
 `
