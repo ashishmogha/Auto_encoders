@@ -84,7 +84,7 @@
  *  Create the **noisy** images ourselves by adding **Gaussian noise** to the training images, then clipping the values to be between 0 and 1. 
  * Use the **noisy** images as input and the original, **clean** images as targets. 
  
- ###### Here's an example of the noisy images I generated and the denoised images.
+ ###### Here's an example of the noisy images I had generated and the denoised images.
  
  ![denoising](https://user-images.githubusercontent.com/17912055/27247144-da97cd52-5313-11e7-9a31-629dfe2546cb.png)
 
