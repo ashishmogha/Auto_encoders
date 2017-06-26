@@ -1,6 +1,6 @@
 # Auto_encoders
 
-* **auto_encoders** are used to compress data, as well as image denoising.
+* **auto_encoders** are used to compress data,as well as image denoising.
 
 * **auto_encoders** build a network that tries to generate it's input data, but with a narrow hidden layer that serves as a compressed representation of the input data.
 
@@ -67,7 +67,7 @@
 ![screenshot capture - 2017-06-17 - 03-48-11](https://user-images.githubusercontent.com/17912055/27246523-d34d4b2a-530f-11e7-91e0-786a32e2866c.png)
 
  * `Top row    -   Original Images`
- * `Bottom row -   Reconstruted Images by **simple auto_encoders**`
+ * `Bottom row -   Reconstruted Images by **simple auto_encoders**`.
 
  
 
